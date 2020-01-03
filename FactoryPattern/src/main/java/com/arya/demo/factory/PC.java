@@ -24,7 +24,7 @@ public class PC extends Configuration {
 
 	@Override
 	public String getCPU() {
-		return this.cpu+ " Processor for PC";
+		return this.cpu+ " GHz Processor for PC";
 	}
 
 	@Override
