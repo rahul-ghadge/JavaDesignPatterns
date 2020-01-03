@@ -24,7 +24,7 @@ public class Server extends Configuration {
 
 	@Override
 	public String getCPU() {
-		return this.cpu+ " Processor for Server";
+		return this.cpu+ " GHz Processor for Server";
 	}
 
 	@Override
