@@ -31,3 +31,22 @@ public class FactoryMainClass {
 
 	}
 }
+
+
+// ***************************************************
+// Output
+// ***************************************************
+//	----------- Server configuration -----------
+//	----------- Personal Computer configuration -------------
+//	----------- Laptop configuration -------------
+//	
+//	****************************************************
+//	Server : 8 GB for Server
+//	PC     : 8 GB for PC
+//	Laptop : 500 GB for Laptop
+//	****************************************************
+//	
+//	Exception in thread "main" java.lang.Exception: No such factory class
+//		at com.arya.demo.factory.Factory.getConfiguration(Factory.java:33)
+//		at com.arya.demo.FactoryMainClass.main(FactoryMainClass.java:30)
+
