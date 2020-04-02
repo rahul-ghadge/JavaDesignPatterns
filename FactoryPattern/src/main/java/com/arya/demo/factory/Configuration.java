@@ -2,9 +2,6 @@ package com.arya.demo.factory;
 
 public abstract class Configuration {
 	
-	public static final String SERVER = "SERVER"; 
-	public static final String PC = "PC"; 
-
 	
 	public abstract String getRAM();
 

@@ -1,5 +1,7 @@
 package com.arya.demo.factory;
 
+import com.arya.demo.utils.ConstantUtil;
+
 public class Factory {
 
 	public static Configuration getConfiguration(String configFor, 
@@ -11,18 +13,23 @@ public class Factory {
 
 			switch (configFor) {
 	
-				case Configuration.SERVER:
+				case ConstantUtil.SERVER:
 					System.out.println("----------- Server configuration -----------");
 					return new Server(ram, hdd, cpu);
 	
-				case Configuration.PC:
+				case ConstantUtil.PC:
 					System.out.println("----------- Personal Computer configuration -------------");
 					return new PC(ram, hdd, cpu);
+					
+				case ConstantUtil.LAPTOP:
+					System.out.println("----------- Laptop configuration -------------");
+					return new Laptop(ram, hdd, cpu);
 	
 				default:
 					break;
 			}
 		}
+		
 		throw new Exception("No such factory class");
 	}
 }
